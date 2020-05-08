@@ -24,11 +24,11 @@ export const GET_AUTH_TOKEN = gql`
 export const resolvers = {
   Query: {
     authToken: () => AsyncStorage.getItem('authToken'),
-    isLoggedIn: (_root, _args, { cache }) => {
+    isLoggedIn: async (_root, _args, { cache }) => {
       // When logging out, this query returns an error.
       // Rescue the error, and return false.
       try {
-        const { authToken } = cache.readQuery({ query: GET_AUTH_TOKEN });
+        const authToken = await AsyncStorage.getItem('authToken');
         return !!authToken;
       } catch (e) {
         return false;
