@@ -43,11 +43,17 @@ const FlexedScrollView = withTheme(
   'ui-prayer.PrayerScreen.FlexedScrollView'
 )(ScrollView);
 
-const PrayerScreen = ({ buttonText, children, isLoading, onPressButton }) => (
+const PrayerScreen = ({
+  buttonText,
+  children,
+  isLoading,
+  onPressBackground,
+  onPressButton,
+}) => (
   <FlexedKeyboardAvoidingView behavior={'padding'}>
     <FlexedScrollView>
       <FlexedSafeAreaView>
-        <FlexedTouchable onPress={() => Keyboard.dismiss()}>
+        <FlexedTouchable onPress={onPressBackground}>
           <Content>{children}</Content>
         </FlexedTouchable>
         <PaddedView>
@@ -66,11 +72,13 @@ PrayerScreen.propTypes = {
   buttonText: PropTypes.string,
   children: PropTypes.node,
   isLoading: PropTypes.bool,
+  onPressBackground: PropTypes.func,
   onPressButton: PropTypes.func,
 };
 
 PrayerScreen.defaultProps = {
   buttonText: 'Pray',
+  onPressBackground: () => Keyboard.dismiss(),
 };
 
 export default withIsLoading(PrayerScreen);
