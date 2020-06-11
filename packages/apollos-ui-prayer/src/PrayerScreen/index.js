@@ -44,7 +44,7 @@ const FlexedScrollView = withTheme(
 )(ScrollView);
 
 const PrayerScreen = ({
-  buttonText,
+  primaryActionText,
   children,
   isLoading,
   onPressBackground,
@@ -58,8 +58,8 @@ const PrayerScreen = ({
         </FlexedTouchable>
         <PaddedView>
           <ButtonWithProps
-            title={buttonText}
             onPress={onPressPrimary}
+            title={primaryActionText}
             isLoading={isLoading}
           />
         </PaddedView>
@@ -69,7 +69,7 @@ const PrayerScreen = ({
 );
 
 PrayerScreen.propTypes = {
-  buttonText: PropTypes.string,
+  primaryActionText: PropTypes.string,
   children: PropTypes.node,
   isLoading: PropTypes.bool,
   onPressBackground: PropTypes.func,
@@ -77,7 +77,7 @@ PrayerScreen.propTypes = {
 };
 
 PrayerScreen.defaultProps = {
-  buttonText: 'Pray',
+  primaryActionText: 'Pray',
   onPressBackground: () => Keyboard.dismiss(),
 };
 
