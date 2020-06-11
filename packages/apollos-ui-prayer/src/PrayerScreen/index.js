@@ -48,7 +48,7 @@ const PrayerScreen = ({
   children,
   isLoading,
   onPressBackground,
-  onPressButton,
+  onPressPrimary,
 }) => (
   <FlexedKeyboardAvoidingView behavior={'padding'}>
     <FlexedScrollView>
@@ -58,8 +58,8 @@ const PrayerScreen = ({
         </FlexedTouchable>
         <PaddedView>
           <ButtonWithProps
-            onPress={onPressButton}
             title={buttonText}
+            onPress={onPressPrimary}
             isLoading={isLoading}
           />
         </PaddedView>
@@ -73,7 +73,7 @@ PrayerScreen.propTypes = {
   children: PropTypes.node,
   isLoading: PropTypes.bool,
   onPressBackground: PropTypes.func,
-  onPressButton: PropTypes.func,
+  onPressPrimary: PropTypes.func,
 };
 
 PrayerScreen.defaultProps = {
