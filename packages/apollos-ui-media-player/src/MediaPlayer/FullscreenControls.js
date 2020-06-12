@@ -231,7 +231,8 @@ class FullscreenControls extends PureComponent {
       {this.props.showAudioToggleControl && !this.props.isCasting ? (
         <IconSm
           onPress={this.isMuted ? this.handleUnMute : this.handleMute}
-          name={this.isMuted ? 'mute' : 'volume'}
+          //name={this.isMuted ? 'mute' : 'volume'}
+          name={'closed-captioning'}
           disabled={isLoading}
         />
       ) : (
