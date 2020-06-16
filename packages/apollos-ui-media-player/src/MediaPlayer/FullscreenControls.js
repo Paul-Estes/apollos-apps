@@ -32,8 +32,8 @@ import {
   EXIT_FULLSCREEN,
   SHOW_VIDEO,
   HIDE_VIDEO,
-  MUTE,
-  UNMUTE,
+  CC_ON,
+  CC_OFF,
 } from './mutations';
 import { ControlsConsumer } from './PlayheadState';
 import Seeker from './Seeker';
@@ -191,12 +191,12 @@ class FullscreenControls extends PureComponent {
     this.props.client.mutate({ mutation: HIDE_VIDEO });
   };
 
-  handleMute = () => {
-    this.props.client.mutate({ mutation: MUTE });
+  handleCCOn = () => {
+    this.props.client.mutate({ mutation: CC_ON });
   };
 
-  handleUnMute = () => {
-    this.props.client.mutate({ mutation: UNMUTE });
+  handleCCOff = () => {
+    this.props.client.mutate({ mutation: CC_OFF });
   };
 
   handleControlVisibility = () => {
@@ -230,9 +230,8 @@ class FullscreenControls extends PureComponent {
     <PlayControls>
       {this.props.showAudioToggleControl && !this.props.isCasting ? (
         <IconSm
-          onPress={this.isMuted ? this.handleUnMute : this.handleMute}
-          //name={this.isMuted ? 'mute' : 'volume'}
-          name={'closed-captioning'}
+          onPress={this.ccOn ? this.handleCCOff : this.handleCCOn}
+          name={this.ccOn ? 'subtitles-solid' : 'subtitles-regular'}
           disabled={isLoading}
         />
       ) : (
@@ -282,7 +281,7 @@ class FullscreenControls extends PureComponent {
   renderFullscreenControls = ({ data: { mediaPlayer = {} } = {} }) => {
     this.isVideo = get(mediaPlayer, 'showVideo');
     this.isPlaying = mediaPlayer.isPlaying;
-    this.isMuted = mediaPlayer.muted;
+    this.ccOn = mediaPlayer.ccOn;
 
     if (
       (mediaPlayer.isFullscreen && !this.wasFullscreen) ||

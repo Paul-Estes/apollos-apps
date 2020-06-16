@@ -42,6 +42,7 @@ const GET_CONTROL_STATE = gql`
       }
       showVideo
       muted
+      ccOn
     }
   }
 `;
@@ -63,6 +64,7 @@ const GET_VIDEO_STATE = gql`
       isPlaying
       showVideo
       muted
+      ccOn
     }
   }
 `;

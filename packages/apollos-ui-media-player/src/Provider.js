@@ -15,6 +15,7 @@ export const defaults = {
   currentTime: 0,
   showVideo: true,
   muted: false,
+  ccOn: false,
 };
 
 export const schema = `
@@ -96,6 +97,7 @@ export const resolvers = {
         currentTime: 0,
         showVideo: mediaTrack.isVideo,
         muted: false,
+        ccOn: false,
       };
 
       if (
@@ -132,7 +134,7 @@ export const resolvers = {
     },
     mediaPlayerUpdateState: (
       root,
-      { isPlaying, isCasting, isFullscreen, isVisible, showVideo, muted },
+      { isPlaying, isCasting, isFullscreen, isVisible, showVideo, muted, ccOn },
       { cache }
     ) => {
       const query = gql`
@@ -144,6 +146,7 @@ export const resolvers = {
             isVisible
             showVideo
             muted
+            ccOn
           }
         }
       `;
@@ -158,6 +161,7 @@ export const resolvers = {
             isVisible,
             showVideo,
             muted,
+            ccOn,
             __typename: 'MediaPlayerState',
           }),
         },

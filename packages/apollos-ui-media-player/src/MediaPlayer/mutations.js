@@ -67,6 +67,18 @@ const UNMUTE = gql`
   }
 `;
 
+const CC_ON = gql`
+  mutation {
+    mediaPlayerUpdateState(ccOn: true) @client
+  }
+`;
+
+const CC_OFF = gql`
+  mutation {
+    mediaPlayerUpdateState(ccOn: false) @client
+  }
+`;
+
 const SHOW_VIDEO = gql`
   mutation {
     mediaPlayerUpdateState(showVideo: true) @client
@@ -108,6 +120,8 @@ export {
   UPDATE_PLAYHEAD,
   MUTE,
   UNMUTE,
+  CC_ON,
+  CC_OFF,
   SHOW_VIDEO,
   HIDE_VIDEO,
   CAST_CONNECTED,

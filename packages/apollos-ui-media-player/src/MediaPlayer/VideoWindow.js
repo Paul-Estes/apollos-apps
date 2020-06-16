@@ -111,7 +111,11 @@ class VideoWindow extends PureComponent {
     return [
       <VideoComponent
         ref={this.setVideoRef}
-        source={mediaPlayer.currentTrack.mediaSource}
+        // source={mediaPlayer.currentTrack.mediaSource}
+        source={{
+          uri:
+            'http://embed.wistia.com/deliveries/532dbcf63984977d0d36dcb33ec3cff29001e44c.m3u8',
+        }}
         paused={!mediaPlayer.isPlaying}
         audioOnly={!mediaPlayer.showVideo}
         ignoreSilentSwitch={'ignore'}
@@ -128,6 +132,7 @@ class VideoWindow extends PureComponent {
         onProgress={this.handleOnProgress}
         style={StyleSheet.absoluteFill}
         volume={mediaPlayer.muted ? 0 : 1}
+        selectedTextTrack={{ type: 'index', value: 0 }}
         repeat
         key="video"
       />,

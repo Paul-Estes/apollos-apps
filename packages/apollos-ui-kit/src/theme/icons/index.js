@@ -56,6 +56,8 @@ export SkipForwardThirty from './SkipForwardThirty';
 export SkipBackThirty from './SkipBackThirty';
 export SkipNext from './SkipNext';
 export SkipPrevious from './SkipPrevious';
+export SubtitlesRegular from './SubtitlesRegular';
+export SubtitlesSolid from './SubtitlesSolid';
 export Text from './Text';
 export Time from './Time';
 export Umbrella from './Umbrella';
