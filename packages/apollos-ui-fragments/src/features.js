@@ -10,6 +10,29 @@ const TEXT_FEATURE_FRAGMENT = gql`
   }
 `;
 
+const PRAYER_LIST_FEATURE_FRAGMENT = gql`
+  fragment PrayerListFeatureFragment on PrayerListFeature {
+    id
+    title
+    subtitle
+    isCard
+    prayers {
+      __typename
+      id
+      text
+      isPrayed
+      requestor {
+        id
+        nickName
+        firstName
+        photo {
+          uri
+        }
+      }
+    }
+  }
+`;
+
 const FEED_FEATURES_FRAGMENT = gql`
   fragment FeedFeaturesFragment on Feature {
     id
@@ -30,6 +53,11 @@ const FEED_FEATURES_FRAGMENT = gql`
     ... on HeroListFeature {
       title
       subtitle
+    }
+    ... on PrayerListFeature {
+      title
+      subtitle
+      isCard
     }
   }
 `;
@@ -89,7 +117,7 @@ const ACTION_LIST_FEATURE_FRAGMENT = gql`
         }
       }
       relatedNode {
-        id
+        ...RelatedFeatureNodeFragment
       }
     }
   }
@@ -111,7 +139,7 @@ const HERO_LIST_FEATURE_FRAGMENT = gql`
         }
       }
       relatedNode {
-        id
+        ...RelatedFeatureNodeFragment
       }
     }
     heroCard {
@@ -127,7 +155,7 @@ const HERO_LIST_FEATURE_FRAGMENT = gql`
         }
       }
       relatedNode {
-        id
+        ...RelatedFeatureNodeFragment
       }
     }
   }
@@ -152,7 +180,7 @@ const VERTICAL_CARD_LIST_FEATURE_FRAGMENT = gql`
         }
       }
       relatedNode {
-        id
+        ...RelatedFeatureNodeFragment
       }
     }
   }
@@ -177,7 +205,7 @@ const HORIZONTAL_CARD_LIST_FEATURE_FRAGMENT = gql`
         }
       }
       relatedNode {
-        id
+        ...RelatedFeatureNodeFragment
       }
     }
   }
@@ -188,6 +216,15 @@ const WEBVIEW_FEATURE_FRAGMENT = gql`
     linkText
     title
     url
+  }
+`;
+
+const RELATED_NODE_FRAGMENT = gql`
+  fragment RelatedFeatureNodeFragment on Node {
+    id
+    ... on Url {
+      url
+    }
   }
 `;
 
@@ -202,4 +239,6 @@ export {
   VERTICAL_CARD_LIST_FEATURE_FRAGMENT,
   FEED_FEATURES_FRAGMENT,
   WEBVIEW_FEATURE_FRAGMENT,
+  PRAYER_LIST_FEATURE_FRAGMENT,
+  RELATED_NODE_FRAGMENT,
 };

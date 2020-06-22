@@ -675,6 +675,12 @@ export const featuresSchema = gql`
   enum ACTION_FEATURE_ACTION {
     READ_CONTENT
     READ_EVENT
+    OPEN_URL
+  }
+
+  type Url implements Node {
+    url: String
+    id: ID!
   }
 
   type ActionListAction {
@@ -803,7 +809,7 @@ export const prayerSchema = gql`
   type PrayerListFeature implements Feature & Node {
     id: ID!
     order: Int
-
+    isCard: Boolean
     title: String
     subtitle: String
     prayers: [PrayerRequest]
