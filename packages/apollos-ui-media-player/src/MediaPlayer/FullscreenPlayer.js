@@ -57,7 +57,7 @@ class FullscreenPlayer extends PureComponent {
     airPlayEnabled: PropTypes.bool,
     googleCastEnabled: PropTypes.bool,
     showAudioToggleControl: PropTypes.bool,
-    showVideoToggleControl: PropTypes.bool,
+    showCCToggle: PropTypes.bool,
   };
 
   static defaultProps = {
