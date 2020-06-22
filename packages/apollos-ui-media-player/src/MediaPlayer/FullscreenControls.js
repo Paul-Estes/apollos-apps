@@ -279,6 +279,7 @@ class FullscreenControls extends PureComponent {
   );
 
   renderFullscreenControls = ({ data: { mediaPlayer = {} } = {} }) => {
+    this.isVideo = get(mediaPlayer, 'showVideo');
     this.isPlaying = mediaPlayer.isPlaying;
     this.isMuted = mediaPlayer.muted;
     this.ccOn = mediaPlayer.ccOn;
