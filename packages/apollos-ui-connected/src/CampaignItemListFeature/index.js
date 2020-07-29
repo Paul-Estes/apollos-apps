@@ -12,47 +12,52 @@ import {
   withIsLoading,
 } from '@apollosproject/ui-kit';
 
+import { ContentCardComponentMapper } from '../ContentCardConnected';
+import { LiveConsumer } from '../live';
+
 const Title = styled(
   ({ theme }) => ({
     color: theme.colors.text.tertiary,
   }),
-  'CampaignItemListFeature.Title'
+  'ui-connected.CampaignListFeature.Title'
 )(H5);
 
-const Subtitle = styled({}, 'CampaignItemListFeature.Subtitle')(H2);
+const Subtitle = styled({}, 'ui-connected.CampaignItemListFeature.Subtitle')(
+  H2
+);
 
-const Header = styled(({ theme }) => ({
-  paddingTop: theme.sizing.baseUnit * 3,
-  paddingBottom: theme.sizing.baseUnit * 0.5,
-}))(PaddedView);
+const Header = styled(
+  ({ theme }) => ({
+    paddingTop: theme.sizing.baseUnit * 3,
+    paddingBottom: theme.sizing.baseUnit * 0.5,
+  }),
+  'ui-connected.CampaignItemListFeature.Header'
+)(PaddedView);
 
-// const getContent = ({ cards, isLoading }) => {
-//   let content = [];
-//   if (isLoading && !cards.length) {
-//     content = [
-//       {
-//         id: 'fakeId0',
-//         isLoading: true,
-//         title: 'Test',
-//         summary: 'Boom',
-//         channelType: '',
-//         coverImage: [],
-//         parentChannel: {
-//           id: '',
-//           name: '',
-//         },
-//       },
-//     ];
-//   } else {
-//     content = cards.map((card) => ({
-//       ...card,
-//       coverImage: get(card, 'coverImage.sources', undefined),
-//       __typename: card.relatedNode.__typename,
-//     }));
-//   }
-//
-//   return content;
-// };
+const ListItemComponent = ({ contentId, labelText, ...item }) => (
+  <LiveConsumer contentId={contentId}>
+    {(liveStream) => {
+      const isLive = !!(liveStream && liveStream.isLive);
+      return (
+        <ContentCardComponentMapper
+          Component={FeaturedCard}
+          {...(isLive
+            ? {
+                isLive,
+              }
+            : { isLive, labelText })} // we only want to pass `labelText` if we are NOT live. If we do we will override the default logic in the FeaturedCard
+          {...item}
+          isFeatured
+        />
+      );
+    }}
+  </LiveConsumer>
+);
+
+ListItemComponent.propTypes = {
+  contentId: PropTypes.string,
+  labelText: PropTypes.string,
+};
 
 const loadingStateData = {
   action: '',
@@ -75,15 +80,7 @@ const loadingStateData = {
 };
 
 const CampaignItemListFeature = memo(
-  ({
-    cards,
-    isLoading,
-    listKey,
-    loadingStateObject,
-    onPressItem,
-    subtitle,
-    title,
-  }) => (
+  ({ cards, isLoading, listKey, onPressItem, subtitle, title }) => (
     <View>
       {isLoading || title || subtitle ? ( // only display the Header if we are loading or have a title/subtitle
         <Header vertical={false}>
@@ -95,9 +92,8 @@ const CampaignItemListFeature = memo(
       ) : null}
       <FeedView
         onPressItem={onPressItem}
-        ListItemComponent={FeaturedCard}
-        loadingStateObject={loadingStateObject}
-        content={cards} // {getContent({ cards, isLoading })}
+        ListItemComponent={ListItemComponent}
+        content={isLoading ? [loadingStateData] : cards}
         isLoading={isLoading}
         listKey={listKey}
       />

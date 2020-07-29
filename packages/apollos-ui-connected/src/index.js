@@ -1,6 +1,10 @@
-export ActionListFeature from './ActionListFeature';
+export ActionListFeatureConnected, {
+  ActionListFeature,
+  GET_ACTION_LIST_FEATURE,
+} from './ActionListFeatureConnected';
 export ContentCardConnected, {
-  contentCardComponentMapper,
+  ContentCardComponentMapper,
+  contentCardComponentMapper, // TODO: Update to `ContentCardComponentMapper` export below is for temporary backwards compatibility.
   GET_CONTENT_CARD,
 } from './ContentCardConnected';
 export CampaignItemListFeature from './CampaignItemListFeature';
@@ -12,8 +16,20 @@ export ContentSingleFeaturesConnected, {
   GET_CONTENT_ITEM_FEATURES,
   ScriptureFeature,
   TextFeature,
+  WebviewFeature,
 } from './ContentSingleFeaturesConnected';
-export HorizontalCardListFeature from './HorizontalCardListFeature';
+export FeaturesFeedConnected, {
+  featuresFeedComponentMapper,
+  GET_FEED_FEATURES,
+} from './FeaturesFeedConnected';
+export HeroListFeatureConnected, {
+  HeroListFeature,
+  GET_HERO_LIST_FEATURE,
+} from './HeroListFeatureConnected';
+export HorizontalCardListFeatureConnected, {
+  HorizontalCardListFeature,
+  GET_HORIZONTAL_CARD_LIST_FEATURE,
+} from './HorizontalCardListFeatureConnected';
 export HorizontalContentCardConnected, {
   horizontalContentCardComponentMapper,
 } from './HorizontalContentCardConnected';
@@ -49,4 +65,8 @@ export ShareButtonConnected, {
 export UpNextButtonConnected from './UpNextButtonConnected';
 export UserAvatarConnected, { UserAvatarUpdate } from './UserAvatarConnected';
 export { fetchMoreResolver, share, uploadPhoto } from './utils';
-export VerticalCardListFeature from './VerticalCardListFeature';
+export VerticalCardListFeatureConnected, {
+  VerticalCardListFeature,
+  GET_VERTICAL_CARD_LIST_FEATURE,
+} from './VerticalCardListFeatureConnected';
+export safeHandleUrl from './safeOpenUrl';
