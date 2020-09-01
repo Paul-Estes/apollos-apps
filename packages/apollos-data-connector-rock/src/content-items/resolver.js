@@ -53,6 +53,8 @@ export const defaultContentItemResolvers = {
   coverImage: (root, args, { dataSources: { ContentItem } }) =>
     ContentItem.getCoverImage(root),
 
+  publishDate: (root, args, { dataSources: { ContentItem } }) =>
+    ContentItem.getPublishDate(root),
   theme: () => null, // todo: integrate themes from Rock
 
   sharing: (root, args, { dataSources: { ContentItem } }) => ({

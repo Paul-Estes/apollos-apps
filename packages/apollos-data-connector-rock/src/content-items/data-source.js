@@ -180,6 +180,14 @@ export default class ContentItem extends RockApolloDataSource {
     return features;
   }
 
+getPublishDate = ({
+  content,
+  attributeValues
+}) => {
+  const publishDate =
+    get(node, 'publishDate', '') !== '' ?
+    moment(node.publishDate).format(DATE_FORMAT) :
+    moment().format(DATE_FORMAT);
   createSummary = ({ content, attributeValues }) => {
     const summary = get(attributeValues, 'summary.value', '');
     if (summary !== '') return summary;
