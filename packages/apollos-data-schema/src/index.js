@@ -25,10 +25,6 @@ export const interfacesSchema = gql`
     audios: [AudioMedia]
   }
 
-  interface FeaturesNode {
-    features: [Feature]
-  }
-
   interface ContentParentNode {
     childContentItemsConnection(
       first: Int
@@ -728,6 +724,8 @@ export const followingsSchema = gql`
 
   extend type Mutation {
     updateLikeEntity(input: LikeEntityInput!): ContentItem
+      @deprecated(reason: "Use the more general updateLikeNode instead")
+    updateLikeNode(input: LikeEntityInput!): Node
   }
 
   ${extendForEachContentItemType(`
@@ -807,6 +805,7 @@ export const featuresSchema = gql`
     READ_CONTENT
     READ_EVENT
     OPEN_URL
+    OPEN_NODE
   }
 
   type Url implements Node {
@@ -911,9 +910,17 @@ export const featuresSchema = gql`
     features: [Feature]
   }
 
+  interface FeaturesNode {
+    features: [Feature]
+  }
+
+  extend type WeekendContentItem implements FeaturesNode
+
   extend type ContentSeriesContentItem {
     features: [Feature]
   }
+
+  extend type ContentSeriesContentItem implements FeaturesNode
 
   extend type Query {
     userFeedFeatures: [Feature] @cacheControl(maxAge: 0)
