@@ -1,6 +1,6 @@
 import { nest } from 'recompose';
 
-import { ThemeProvider } from './theme';
+import { ThemeProvider, ThemeManager } from './theme';
 import { LayoutProvider } from './LayoutContext';
 
-export default nest(ThemeProvider, LayoutProvider);
+export default nest(ThemeProvider, ThemeManager, LayoutProvider);
