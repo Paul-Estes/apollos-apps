@@ -80,7 +80,7 @@ export const sizing = {
   baseBorderRadius: 16,
   avatar: {
     small: 40,
-    medium: 80,
+    medium: 82,
     large: 120,
   },
 };

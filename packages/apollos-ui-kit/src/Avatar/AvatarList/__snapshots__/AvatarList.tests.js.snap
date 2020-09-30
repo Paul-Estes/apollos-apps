@@ -106,7 +106,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
       <View
         style={
           Object {
-            "borderRadius": 32,
+            "borderRadius": 32.800000000000004,
             "marginRight": 8,
             "overflow": "hidden",
           }
@@ -133,15 +133,15 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#00676D",
-                "padding": 13,
+                "padding": 13.325000000000001,
               }
             }
           >
             <RNSVGSvgView
               align="xMidYMid"
-              bbHeight={38}
-              bbWidth={38}
-              height={38}
+              bbHeight={38.949999999999996}
+              bbWidth={38.949999999999996}
+              height={38.949999999999996}
               meetOrSlice={0}
               minX={0}
               minY={0}
@@ -162,7 +162,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
               }
               vbHeight={26}
               vbWidth={24}
-              width={38}
+              width={38.949999999999996}
             >
               <RNSVGGroup
                 fill={
@@ -287,13 +287,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -309,7 +309,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -319,21 +319,21 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -371,13 +371,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -393,7 +393,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -403,21 +403,21 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -455,13 +455,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -477,7 +477,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -487,21 +487,21 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -539,13 +539,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -561,7 +561,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -571,7 +571,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -607,13 +607,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -629,7 +629,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -639,7 +639,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -675,13 +675,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -697,7 +697,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -707,7 +707,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -743,13 +743,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -765,7 +765,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -775,7 +775,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -811,13 +811,13 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -833,7 +833,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -843,7 +843,7 @@ exports[`The AvatarList component should accept an onPressAdd function 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -973,13 +973,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -995,7 +995,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1005,21 +1005,21 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1057,13 +1057,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1079,7 +1079,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1089,21 +1089,21 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1141,13 +1141,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1163,7 +1163,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1173,21 +1173,21 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1225,13 +1225,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1247,7 +1247,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1257,7 +1257,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1293,13 +1293,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1315,7 +1315,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1325,7 +1325,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1361,13 +1361,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1383,7 +1383,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1393,7 +1393,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1429,13 +1429,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1451,7 +1451,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1461,7 +1461,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1497,13 +1497,13 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1519,7 +1519,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1529,7 +1529,7 @@ exports[`The AvatarList component should accept an onPressAvatar function 1`] = 
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1659,13 +1659,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1681,7 +1681,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1691,21 +1691,21 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1743,13 +1743,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1765,7 +1765,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1775,21 +1775,21 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1827,13 +1827,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1849,7 +1849,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1859,21 +1859,21 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
           <View
-            avatarSize={64}
+            avatarSize={65.60000000000001}
             style={
               Object {
                 "aspectRatio": 1,
                 "backgroundColor": "#17B582",
-                "borderRadius": 16,
-                "marginRight": 2,
-                "marginTop": 2,
+                "borderRadius": 16.400000000000002,
+                "marginRight": 2.0500000000000003,
+                "marginTop": 2.0500000000000003,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": 16,
+                "width": 16.400000000000002,
               }
             }
           />
@@ -1911,13 +1911,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -1933,7 +1933,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -1943,7 +1943,7 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -1979,13 +1979,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -2001,7 +2001,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -2011,7 +2011,7 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -2047,13 +2047,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -2069,7 +2069,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -2079,7 +2079,7 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -2115,13 +2115,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -2137,7 +2137,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -2147,7 +2147,7 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -2183,13 +2183,13 @@ exports[`The AvatarList component should render 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <Image
             fadeDuration={250}
@@ -2205,7 +2205,7 @@ exports[`The AvatarList component should render 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "borderRadius": 32,
+                "borderRadius": 32.800000000000004,
                 "bottom": 0,
                 "height": "100%",
                 "left": 0,
@@ -2215,7 +2215,7 @@ exports[`The AvatarList component should render 1`] = `
                 "width": "100%",
               }
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
           />
         </View>
       </View>
@@ -2327,7 +2327,7 @@ exports[`The AvatarList component should render a loading state 1`] = `
       <View
         style={
           Object {
-            "borderRadius": 32,
+            "borderRadius": 32.800000000000004,
             "marginRight": 8,
             "overflow": "hidden",
           }
@@ -2355,7 +2355,7 @@ exports[`The AvatarList component should render a loading state 1`] = `
             style={
               Object {
                 "backgroundColor": "#A5A5A5",
-                "padding": 13,
+                "padding": 13.325000000000001,
               }
             }
           >
@@ -2364,8 +2364,8 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 Object {
                   "backgroundColor": "#A5A5A5",
                   "borderRadius": 16,
-                  "height": 38,
-                  "width": 38,
+                  "height": 38.949999999999996,
+                  "width": 38.949999999999996,
                 }
               }
             />
@@ -2404,19 +2404,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -2430,15 +2430,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -2562,19 +2562,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -2588,15 +2588,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -2720,19 +2720,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -2746,15 +2746,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -2878,19 +2878,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -2904,15 +2904,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -3036,19 +3036,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -3062,15 +3062,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -3194,19 +3194,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -3220,15 +3220,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -3352,19 +3352,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -3378,15 +3378,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={
@@ -3510,19 +3510,19 @@ exports[`The AvatarList component should render a loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "height": 64,
+              "height": 65.60000000000001,
               "justifyContent": "center",
               "marginRight": 8,
-              "width": 64,
+              "width": 65.60000000000001,
             }
           }
-          themeSize={64}
+          themeSize={65.60000000000001}
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={70}
-            bbWidth={70}
-            height={70}
+            bbHeight={71.75000000000001}
+            bbWidth={71.75000000000001}
+            height={71.75000000000001}
             meetOrSlice={0}
             minX={0}
             minY={0}
@@ -3536,15 +3536,15 @@ exports[`The AvatarList component should render a loading state 1`] = `
                 null,
                 Object {
                   "flex": 0,
-                  "height": 70,
-                  "width": 70,
+                  "height": 71,
+                  "width": 71,
                 },
               ]
             }
-            themeSize={64}
+            themeSize={65.60000000000001}
             vbHeight={24}
             vbWidth={24}
-            width={70}
+            width={71.75000000000001}
           >
             <RNSVGGroup
               fill={

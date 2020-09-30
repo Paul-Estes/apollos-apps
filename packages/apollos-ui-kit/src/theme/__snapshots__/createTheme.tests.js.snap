@@ -130,7 +130,7 @@ Object {
   "sizing": Object {
     "avatar": Object {
       "large": 120,
-      "medium": 80,
+      "medium": 82,
       "small": 40,
     },
     "baseBorderRadius": 16,
@@ -440,7 +440,7 @@ Object {
   "sizing": Object {
     "avatar": Object {
       "large": 120,
-      "medium": 80,
+      "medium": 82,
       "small": 40,
     },
     "baseBorderRadius": 16,
