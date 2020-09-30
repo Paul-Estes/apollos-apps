@@ -84,6 +84,7 @@ class DateInput extends PureComponent {
               : new Date(Date.now())
           } // Using Date.now so we have something to mock in the tests
           mode={'date'}
+          display={Platform.OS === 'android' ? 'calendar' : 'spinner'}
           onConfirm={this.handleConfirm}
           onCancel={this.handleClose}
         />
