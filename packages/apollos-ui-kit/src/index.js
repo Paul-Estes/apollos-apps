@@ -1,3 +1,5 @@
+import { ThemeManager } from './theme';
+
 export ActionCard from './ActionCard';
 export ActionList from './ActionList';
 export ActionListCard from './ActionListCard';
@@ -67,7 +69,7 @@ export TableView, {
   FormFields,
 } from './TableView';
 export TabView, { SceneMap as TabSceneMap, TabBar } from './TabView';
-export ThemeProvider, {
+export ThemeProvider, ThemeManager, {
   withTheme,
   ThemeMixin,
   withThemeMixin,
