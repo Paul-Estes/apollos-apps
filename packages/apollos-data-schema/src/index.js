@@ -801,6 +801,7 @@ export const featuresSchema = gql`
     order: Int # 0 is the "Main Content". If order is < 0 than this comes before the body content.
   }
 
+  # deprecated
   enum ACTION_FEATURE_ACTION {
     READ_CONTENT
     READ_EVENT
@@ -808,17 +809,20 @@ export const featuresSchema = gql`
     OPEN_NODE
   }
 
+  # deprecated
   type Url implements Node {
     url: String
     id: ID!
   }
 
+  # deprecated
   type FeatureAction {
     relatedNode: Node
     action: ACTION_FEATURE_ACTION
     title: String
   }
 
+  # deprecated
   type ActionListAction {
     id: ID!
 
@@ -829,14 +833,40 @@ export const featuresSchema = gql`
     action: ACTION_FEATURE_ACTION
   }
 
+  interface Action {
+    title: String
+    subtitle: String
+    image: ImageMedia
+  }
+
+  type NodeAction implements Action & Node {
+    id: ID!
+    title: String
+    subtitle: String
+    image: ImageMedia
+
+    relatedNode: Node
+  }
+
+  type UrlAction implements Action & Node {
+    id: ID!
+    title: String
+    subtitle: String
+    image: ImageMedia
+
+    relatedUrl: String
+  }
+
   type ActionListFeature implements Feature & Node {
     id: ID!
     order: Int
 
     title: String
     subtitle: String
-    actions: [ActionListAction]
-    primaryAction: FeatureAction
+    actions: [ActionListAction] @deprecated(reason: "Use actionList")
+    primaryAction: FeatureAction @deprecated(reason: "Use defaultAction")
+    actionList: [Action]
+    defaultAction: Action
   }
 
   type HeroListFeature implements Feature & Node {
@@ -845,23 +875,27 @@ export const featuresSchema = gql`
 
     title: String
     subtitle: String
-    actions: [ActionListAction]
     heroCard: CardListItem
-    primaryAction: FeatureAction
+    actions: [ActionListAction] @deprecated(reason: "Use actionList")
+    primaryAction: FeatureAction @deprecated(reason: "Use defaultAction")
+    actionList: [Action]
+    defaultAction: Action
   }
 
   type CardListItem {
     id: ID!
 
     hasAction: Boolean
+      @deprecated(reason: "hasAction is implied from defaultAction")
     actionIcon: String
     labelText: String
     summary: String
     coverImage: ImageMedia
     title(hyphenated: Boolean): String
 
-    relatedNode: Node
-    action: ACTION_FEATURE_ACTION
+    relatedNode: Node @deprecated(reason: "Use defaultAction")
+    action: ACTION_FEATURE_ACTION @deprecated(reason: "Use defaultAction")
+    defaultAction: Action
   }
 
   type VerticalCardListFeature implements Feature & Node {
