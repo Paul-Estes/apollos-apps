@@ -36,6 +36,7 @@ const CONTENT_ITEM_FRAGMENT = gql`
   fragment contentItemFragment on ContentItem {
     id
     title
+    publishDate
     summary
     htmlContent
     coverImage {
@@ -73,6 +74,7 @@ const CONTENT_ITEM_FRAGMENT = gql`
 const CONTENT_SINGLE_FRAGMENT = gql`
   fragment ContentSingleFragment on ContentItem {
     title
+    publishDate
     htmlContent
     coverImage {
       sources {
@@ -102,6 +104,7 @@ const CONTENT_CARD_FRAGMENT = gql`
     }
     title
     hyphenatedTitle: title(hyphenated: true)
+    publishDate
     summary
     ... on MediaContentItem {
       videos {
@@ -138,6 +141,7 @@ const CONTENT_MEDIA_FRAGMENT = gql`
   fragment contentMediaFragment on ContentItem {
     id
     title
+    publishDate
     parentChannel {
       id
       name
