@@ -53,6 +53,11 @@ export const defaultContentItemResolvers = {
   coverImage: (root, args, { dataSources: { ContentItem } }) =>
     ContentItem.getCoverImage(root),
 
+
+  // need access to contentItem data
+  // resolver = function that's responsbile for populating data in schema
+  // resolver can accept four positional arguments (parent, args, context, info)
+  // look at all the args object passed to root ContentItem
   publishDate: (root, args, { dataSources: { ContentItem } }) =>
   ContentItem.getPublishDate(root),
 
