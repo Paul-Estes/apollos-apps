@@ -16,7 +16,6 @@ export ContentSingleFeaturesConnected, {
   ContentSingleFeatures,
   GET_CONTENT_ITEM_FEATURES,
 } from './ContentSingleFeaturesConnected';
-export ContentFeatureFeedConnected from './ContentFeatureFeedConnected';
 export ContentChildFeedConnected, {
   GET_CONTENT_CHILD_SIBLINGS,
 } from './ContentChildFeedConnected';
