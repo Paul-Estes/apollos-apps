@@ -833,28 +833,28 @@ export const featuresSchema = gql`
     action: ACTION_FEATURE_ACTION
   }
 
-  interface Action {
+  interface Link {
     title: String
     subtitle: String
     image: ImageMedia
   }
 
-  type NodeAction implements Action & Node {
+  type NodeLink implements Action & Node {
     id: ID!
     title: String
     subtitle: String
     image: ImageMedia
 
-    relatedNode: Node
+    node: Node
   }
 
-  type UrlAction implements Action & Node {
+  type UrlLink implements Action & Node {
     id: ID!
     title: String
     subtitle: String
     image: ImageMedia
 
-    relatedUrl: String
+    url: String
   }
 
   type ActionListFeature implements Feature & Node {
@@ -863,10 +863,9 @@ export const featuresSchema = gql`
 
     title: String
     subtitle: String
-    actions: [ActionListAction] @deprecated(reason: "Use actionList")
-    primaryAction: FeatureAction @deprecated(reason: "Use defaultAction")
-    actionList: [Action]
-    defaultAction: Action
+    actions: [ActionListAction] @deprecated(reason: "Use links")
+    primaryAction: FeatureAction @deprecated(reason: "Not supported")
+    links: [Link]
   }
 
   type HeroListFeature implements Feature & Node {
@@ -876,10 +875,9 @@ export const featuresSchema = gql`
     title: String
     subtitle: String
     heroCard: CardListItem
-    actions: [ActionListAction] @deprecated(reason: "Use actionList")
-    primaryAction: FeatureAction @deprecated(reason: "Use defaultAction")
-    actionList: [Action]
-    defaultAction: Action
+    actions: [ActionListAction] @deprecated(reason: "Use links")
+    primaryAction: FeatureAction @deprecated(reason: "Not supported")
+    links: [Link]
   }
 
   type CardListItem {
@@ -893,9 +891,9 @@ export const featuresSchema = gql`
     coverImage: ImageMedia
     title(hyphenated: Boolean): String
 
-    relatedNode: Node @deprecated(reason: "Use defaultAction")
-    action: ACTION_FEATURE_ACTION @deprecated(reason: "Use defaultAction")
-    defaultAction: Action
+    relatedNode: Node @deprecated(reason: "Use link with a NodeLink type")
+    action: ACTION_FEATURE_ACTION @deprecated(reason: "Use link")
+    link: Link
   }
 
   type VerticalCardListFeature implements Feature & Node {
