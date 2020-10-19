@@ -196,9 +196,22 @@ export default class Feature extends RockApolloDataSource {
     hyphenatedTitle,
     title,
     subtitle,
+    primaryAction,
   }) {
     // Generate a list of horizontal cards.
     const cards = () => this.runAlgorithms({ algorithms });
+    // Ensures that we have a generated ID for the Primary Action related node, if not provided.
+    if (
+      primaryAction &&
+      primaryAction.relatedNode &&
+      !primaryAction.relatedNode.id
+    ) {
+      primaryAction.relatedNode.id = createGlobalId( // eslint-disable-line
+        JSON.stringify(primaryAction.relatedNode),
+        primaryAction.relatedNode.__typename
+      );
+    }
+
     return {
       // The Feature ID is based on all of the action ids, added together.
       // This is naive, and could be improved.
@@ -207,12 +220,14 @@ export default class Feature extends RockApolloDataSource {
           algorithms,
           title,
           subtitle,
+          primaryAction,
         },
       }),
       cards,
       hyphenatedTitle,
       title,
       subtitle,
+      primaryAction,
       // Typename is required so GQL knows specifically what Feature is being created
       __typename: 'HorizontalCardListFeature',
     };
@@ -450,9 +465,15 @@ Make sure you structure your algorithm entry as \`{ type: 'CONTENT_CHANNEL', aru
       .join('\n\n');
   }
 
-  async getHomeFeedFeatures() {
+  // deprecated
+  getHomeFeedFeatures = () =>
+    console.warn(
+      'getHomeFeedFeatures is deprecated, please use FeatureFeed.getFeed({type: "apollosConfig", args: {"section": "home"}})'
+    ) || this.getFeatures(get(ApollosConfig, 'HOME_FEATURES', []));
+
+  getFeatures = async (featuresConfig = []) => {
     return Promise.all(
-      get(ApollosConfig, 'HOME_FEATURES', []).map((featureConfig) => {
+      featuresConfig.map((featureConfig) => {
         switch (featureConfig.type) {
           case 'VerticalCardList':
             return this.createVerticalCardListFeature(featureConfig);
@@ -474,5 +495,5 @@ Make sure you structure your algorithm entry as \`{ type: 'CONTENT_CHANNEL', aru
         }
       })
     );
-  }
+  };
 }

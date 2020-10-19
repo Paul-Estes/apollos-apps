@@ -59,6 +59,9 @@ const FEED_FEATURES_FRAGMENT = gql`
       subtitle
       isCard
     }
+    ...TextFeatureFragment
+    ...ScriptureFeatureFragment
+    ...WebviewFeatureFragment
   }
 `;
 
@@ -230,6 +233,13 @@ const HORIZONTAL_CARD_LIST_FEATURE_FRAGMENT = gql`
         ...RelatedFeatureNodeFragment
       }
     }
+    primaryAction {
+      title
+      action
+      relatedNode {
+        ...RelatedFeatureNodeFragment
+      }
+    }
   }
 `;
 
@@ -246,6 +256,9 @@ const RELATED_NODE_FRAGMENT = gql`
     id
     ... on Url {
       url
+    }
+    ... on ContentChannel {
+      name
     }
   }
 `;

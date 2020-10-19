@@ -2,10 +2,12 @@ import { get } from 'lodash';
 import { createGlobalId } from '@apollosproject/server-core';
 
 export default {
+  // deprecated
   WeekendContentItem: {
     features: (root, args, { dataSources: { ContentItem } }) =>
       ContentItem.getFeatures(root),
   },
+  // deprecated
   ContentSeriesContentItem: {
     features: (root, args, { dataSources: { ContentItem } }) =>
       ContentItem.getFeatures(root),
@@ -47,6 +49,7 @@ export default {
   },
   Query: {
     userFeedFeatures: async (root, args, { dataSources: { Feature } }) =>
+      console.warn('userFeedFeatures is deprecated. Use homeFeedFeatures.') ||
       Feature.getHomeFeedFeatures(),
   },
   ActionListFeature: {
