@@ -59,7 +59,11 @@ export const defaultContentItemResolvers = {
   // resolver can accept four positional arguments (parent, args, context, info)
   // look at all the args object passed to root ContentItem
   publishDate: (root, args, { dataSources: { ContentItem } }) =>
-  ContentItem.getPublishDate(root),
+  // ContentItem.getStartDateTime(root),
+  {
+    console.log(root);
+    return "BOOOM";
+  },
 
   theme: () => null, // todo: integrate themes from Rock
 
@@ -72,6 +76,8 @@ export const defaultContentItemResolvers = {
     message: `${root.title} - ${ContentItem.createSummary(root)}`,
   }),
 };
+
+// console.log(defaultContentItemResolvers);
 
 const resolver = {
   Query: {
