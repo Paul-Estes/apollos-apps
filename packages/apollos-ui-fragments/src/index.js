@@ -9,6 +9,7 @@ import * as interfaces from './interfaces';
 import * as searchResults from './searchResults';
 import * as publish from './publish';
 
+
 const FRAGMENTS = {
   ...campus,
   ...content,
