@@ -6,6 +6,7 @@ import * as pass from './pass';
 import * as scripture from './scripture';
 import * as user from './user';
 import * as interfaces from './interfaces';
+import * as searchResults from './searchResults';
 import * as publish from './publish';
 
 const FRAGMENTS = {
@@ -17,6 +18,7 @@ const FRAGMENTS = {
   ...pass,
   ...user,
   ...interfaces,
+  ...searchResults,
   ...publish,
 };
 
