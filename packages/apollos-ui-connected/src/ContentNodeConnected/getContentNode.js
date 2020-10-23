@@ -7,10 +7,10 @@ export default gql`
       id
       ...ContentNodeFragment
       ...ContentSingleFragment
-      ...publishFragment
+      # ...publishFragment
     }
   }
   ${ApollosConfig.FRAGMENTS.CONTENT_NODE_FRAGMENT}
   ${ApollosConfig.FRAGMENTS.CONTENT_SINGLE_FRAGMENT}
-  ${ApollosConfig.FRAGMENTS.PUBLISH_FRAGMENT}
+  # ${ApollosConfig.FRAGMENTS.PUBLISH_FRAGMENT}
 `;

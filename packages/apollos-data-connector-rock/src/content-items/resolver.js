@@ -59,7 +59,7 @@ export const defaultContentItemResolvers = {
   // resolver can accept four positional arguments (parent, args, context, info)
   // look at all the args object passed to root ContentItem
   publishDate: (root, args, { dataSources: { ContentItem } }) =>
-  // ContentItem.getStartDateTime(root),
+  // ContentItem.getPublishDate(root),
   {
     console.log(root);
     return "BOOOM";

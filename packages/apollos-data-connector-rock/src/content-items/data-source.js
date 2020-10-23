@@ -180,18 +180,12 @@ export default class ContentItem extends RockApolloDataSource {
     return features;
   }
 
-  // getStartDateTime = ({ attributeValues }) => {
-  //   const startDateTime =
-  //     get(attributeValues, 'startDateTime.value', '') !== '' ?
-  //     moment(startDateTime).format(DATE_FORMAT) :
-  //     moment().format(DATE_FORMAT);
-  // };
-  // getPublishDate = ({ attributeValues }) => {
-  //   const publishDate =
-  //     get(attributeValues, 'publishDate.value', '') !== '' ?
-  //     moment(publishDate).format(DATE_FORMAT) :
-  //     moment().format(DATE_FORMAT);
-  // };
+  getPublishDate = ({ attributeValues }) => {
+    const publishDate =
+      get(attributeValues, 'startDateTime.value', '') !== '' ?
+      moment(startDateTime).format(DATE_FORMAT) :
+      moment().format(DATE_FORMAT);
+  };
 
   createSummary = ({ content, attributeValues }) => {
     const summary = get(attributeValues, 'summary.value', '');
