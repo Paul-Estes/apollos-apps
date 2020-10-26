@@ -840,7 +840,7 @@ export const featuresSchema = gql`
     image: ImageMedia
   }
 
-  type NodeLink implements Action & Node {
+  type NodeLink implements Link & Node {
     id: ID!
     title: String
     subtitle: String
@@ -849,7 +849,7 @@ export const featuresSchema = gql`
     node: Node
   }
 
-  type UrlLink implements Action & Node {
+  type UrlLink implements Link & Node {
     id: ID!
     title: String
     subtitle: String
