@@ -43,8 +43,6 @@
   },
   "homepage": "https://github.com/apollosproject/react-native-apollos-player#readme",
   "devDependencies": {
-    "@apollosproject/ui-kit": "1.6.0",
-    "@apollosproject/ui-storybook": "1.6.0",
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
     "@react-native-community/eslint-config": "^2.0.0",
