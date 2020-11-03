@@ -65,9 +65,9 @@
     "jest": "24.8.0",
     "jest-react-native": "18.0.0",
     "prop-types": "15.6.1",
-    "react": "16.8.6",
+    "react": "16.13.1",
     "react-apollo": "2.5.5",
-    "react-native": "0.60.5",
+    "react-native": "0.63.2",
     "react-navigation": "^3.11.0",
     "react-test-renderer": "16.8.6",
     "waait": "1.0.2"

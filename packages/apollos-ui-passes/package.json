@@ -53,8 +53,8 @@
     "jest": "24.8.0",
     "jest-react-native": "18.0.0",
     "prop-types": "15.6.1",
-    "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react": "16.13.1",
+    "react-native": "0.63.2",
     "react-native-passkit-wallet": "^0.1.4",
     "react-test-renderer": "16.8.6",
     "rn-fetch-blob": "^0.10.15"

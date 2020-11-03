@@ -28,7 +28,7 @@
     "nuke:cache": "watchman watch-del-all",
     "postinstall": "lerna run build --parallel",
     "generate-docs": "lerna run generate-docs",
-    "generate-stories": "rnstl --searchDir ./src --pattern **/*.stories.js",
+    "generate-stories": "lerna run generate-stories",
     "storybook": "(lerna run generate-stories && cd ApollosStorybook && yarn && yarn ios)"
   },
   "resolutions": {
