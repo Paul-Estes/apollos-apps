@@ -8,7 +8,7 @@ const PlayerExamples = () => {
   const { setNowPlaying, setIsPlaying, setIsFullscreen } = usePlayer();
 
   return (
-    <React.Fragment>
+    <>
       <Text
         onPress={() => {
           setNowPlaying({
@@ -61,7 +61,7 @@ const PlayerExamples = () => {
         Play streaming M3u8
       </Text>
       <Text onPress={() => setIsFullscreen(true)}>Open fullscreen</Text>
-    </React.Fragment>
+    </>
   );
 };
 
@@ -73,6 +73,7 @@ const BasicPlayer = () => (
       description: 'Video Description',
     }}
   >
+    <PlayerExamples />
     <Text>---------</Text>
     <Text>---------</Text>
     <Text>---------</Text>
@@ -200,6 +201,9 @@ const BasicPlayer = () => (
     <Text>---------</Text>
     <Text>---------</Text>
   </ApollosPlayerContainer>
-)
+);
 
-storiesOf('react-native-apollos-player', module).add('Basic Player', BasicPlayer);
+storiesOf('react-native-apollos-player', module).add(
+  'Basic Player',
+  BasicPlayer
+);
