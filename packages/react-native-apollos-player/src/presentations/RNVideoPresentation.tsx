@@ -65,14 +65,14 @@ const RNVideoPresentation = () => {
     [videoRef, playheadRef]
   );
 
-  setSkipHandler(() => skip);
+  React.useEffect(() => setSkipHandler(() => skip), [setSkipHandler, skip]);
 
   const seek = React.useMemo(
     () => (seekBy: number) => videoRef?.current?.seek(seekBy),
     [videoRef]
   );
 
-  setSeekHandler(() => seek);
+  React.useEffect(() => setSeekHandler(() => seek), [setSeekHandler, seek])
 
   // While Android doesn't have a fullscreen player, calling present
   // and dismiss does still hide the status bar and Android controls
