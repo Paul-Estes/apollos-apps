@@ -59,6 +59,14 @@ export interface IInternalPlayer {
   isControlVisibilityLocked: boolean;
   onProgress: (handlerToAdd: (props: IProgressProp) => void) => () => void;
   handleProgress: (props: IProgressProp) => void;
+
+  playheadRef: {
+    current: {
+      currentTime: number;
+      playableDuration: number;
+      seekableDuration: number;
+    }
+  }
 }
 
 export interface IPresentationComponents {

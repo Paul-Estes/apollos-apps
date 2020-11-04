@@ -59,6 +59,12 @@ const Container: React.FunctionComponent<ContainerProps> = ({
     [setNowPlaying, setIsPlaying, setIsFullscreen]
   );
 
+  const playheadRef = React.useRef({
+    currentTime: 0,
+    playableDuration: 0,
+    seekableDuration: 0,
+  });
+
   const nowPlayingState = React.useMemo(
     () => ({
       nowPlaying,
@@ -120,6 +126,7 @@ const Container: React.FunctionComponent<ContainerProps> = ({
       setSkipHandler,
       setIsControlVisibilityLocked,
       isControlVisibilityLocked,
+      playheadRef,
     }),
     [
       playerId,
@@ -130,6 +137,7 @@ const Container: React.FunctionComponent<ContainerProps> = ({
       isControlVisibilityLocked,
       handleProgress,
       onProgress,
+      playheadRef,
     ]
   );
 

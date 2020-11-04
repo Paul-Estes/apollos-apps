@@ -169,7 +169,7 @@ const FullscreenSlidingPlayer: React.FunctionComponent<FullScreenSlidingPlayerPr
       {/* Primary Video View */}
       <Animated.View style={presentationStyles}>
         <VideoPresentationContainer />
-        {PresentationComponent ? <PresentationComponent /> : null}
+        {!isFullscreen && PresentationComponent ? <PresentationComponent /> : null}
       </Animated.View>
 
       {/* iOS-only modal-based fullScreen controls */}
@@ -178,7 +178,7 @@ const FullscreenSlidingPlayer: React.FunctionComponent<FullScreenSlidingPlayerPr
           style={[presentationStyles, fullscreenPresentationStyles]}
         >
           {isFullscreen ? <VideoOutlet /> : null}
-          {PresentationComponent ? <PresentationComponent /> : null}
+          {isFullscreen && PresentationComponent ? <PresentationComponent /> : null}
         </Animated.View>
       </FullscreenWrapper>
 

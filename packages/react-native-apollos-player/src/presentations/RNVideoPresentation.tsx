@@ -26,15 +26,9 @@ const RNVideoPresentation = () => {
     isInPiP,
   } = usePlayer();
 
-  const { setSkipHandler, setSeekHandler, handleProgress } = React.useContext(
+  const { setSkipHandler, setSeekHandler, handleProgress, playheadRef } = React.useContext(
     InternalPlayerContext
   );
-
-  const playheadRef = React.useRef({
-    currentTime: 0,
-    playableDuration: 0,
-    seekableDuration: 0,
-  });
 
   const handleProgressProp = React.useMemo(
     () => (playhead: {

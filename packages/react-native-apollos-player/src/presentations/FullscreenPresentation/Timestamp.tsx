@@ -43,10 +43,9 @@ const formattedTimestamp = (time = 0) => {
  * Displays a MM:SS formatted timestamp from either a number or Animate.Value in seconds
  */
 const TimeStamp: React.FunctionComponent = () => {
-  const [time, setCurrentTime] = React.useState(0);
-  const [totalTime, setTotalTime] = React.useState(0);
-
-  const { onProgress } = React.useContext(InternalPlayerContext);
+  const { onProgress, playheadRef } = React.useContext(InternalPlayerContext);
+  const [time, setCurrentTime] = React.useState(playheadRef.current.currentTime);
+  const [totalTime, setTotalTime] = React.useState(playheadRef.current.playableDuration);
 
   React.useEffect(
     () =>
